@@ -5,7 +5,8 @@ window.addEventListener('load', function() {
 
     // Use the browser's ethereum provider
     var provider = web3.currentProvider;
-    document.getElementById("output").innerHTML = provider;
+    var defaultAccount = web3.eth.defaultAccount;
+    document.getElementById("output").innerHTML = defaultAccount;
 
   } else {
     document.getElementById("output").innerHTML = 'No web3? You should consider trying MetaMask!';
