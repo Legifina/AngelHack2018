@@ -10,7 +10,6 @@ window.addEventListener('load', function() {
 
   } else {
     document.getElementById("output").innerHTML = 'No web3? You should consider trying MetaMask!';
-    console.log('No web3? You should consider trying MetaMask!')
   }
 
 })
