@@ -6,10 +6,10 @@ window.addEventListener('load', function() {
     // Use the browser's ethereum provider
     var provider = web3.currentProvider;
     var defaultAccount = web3.eth.defaultAccount;
-    document.getElementById("output").innerHTML = defaultAccount;
+    document.getElementById("defaultAccount").innerHTML = defaultAccount;
 
   } else {
-    document.getElementById("output").innerHTML = 'No web3? You should consider trying MetaMask!';
+    document.getElementById("defaultAccount").innerHTML = 'No web3? You should consider trying MetaMask!';
   }
 
 })
